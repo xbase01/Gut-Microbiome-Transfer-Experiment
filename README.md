@@ -23,8 +23,14 @@ In this study, wild mice and laboratory mice were compared to determine if wild 
 - **Procedure**: Fecal microbiota from wild mice was transferred to germ-free mice. The microbiome of the recipient mice was then analyzed using 16S rRNA sequencing (V4 region) to identify microbial composition.
 - **Key Hypothesis**: The microbiome from wild mice may confer enhanced disease resistance and fitness to the recipient germ-free mice.
 
+### Experiment Scheme
+![experiment_scheme](img/experiment_scheme.png)
+
+### Conservative and variable regions
+![Conservative_and_variable_regions](img/Conservative_and_variable_regions.png)
+
 ## Data Processing Pipeline
-1. **Data Acquisition**: Raw 16S rRNA sequencing data from fecal samples obtained from data source: https://www.dropbox.com/s/bvr9djue7689mfb/mice_microbiome.zip?dl=0515F-806R ).
+1. **Data Acquisition**: Raw 16S rRNA sequencing data from fecal samples obtained from ![data source](https://www.dropbox.com/s/bvr9djue7689mfb/mice_microbiome.zip?dl=0515F-806R).
 2. **Quality Control**: The raw data was imported into **QIIME2**, where it was trimmed, filtered, and corrected using **DADA2**.
 3. **Taxonomic Classification**: The sequences were classified taxonomically using a naive Bayes classifier.
 4. **Analysis**: Various downstream analyses were performed, including diversity estimation, comparison between groups, and the identification of significant microbial taxa.
@@ -36,7 +42,7 @@ In this study, wild mice and laboratory mice were compared to determine if wild 
 
 ## Results
 ### Taxonomic Classification
-The microbiome from both wild and laboratory mice successfully colonized the guts of germ-free mice, as evidenced by the similarity in microbiome composition between the donors and recipients. The dominant bacterial phylum in both environments is *Firmicutes_A* (![Figure 2](img/Figure2.png)). However, distinguishing a single dominant bacterial genus was challenging. Generally, laboratory mice predominantly harbor members of the *Lachnospiraceae* family, while wild mice are primarily colonized by the genus *Helicobacter_D* (![Figure 3](img/Figure3.png)). The bar plot shows a high level of alpha diversity across all groups.
+The microbiome from both wild and laboratory mice successfully colonized the guts of germ-free mice, as evidenced by the similarity in microbiome composition between the donors and recipients. The dominant bacterial phylum in both environments is *Firmicutes_A* ![Figure 2](img/Figure2.png). However, distinguishing a single dominant bacterial genus was challenging. Generally, laboratory mice predominantly harbor members of the *Lachnospiraceae* family, while wild mice are primarily colonized by the genus *Helicobacter_D* ![Figure 3](img/Figure3.png). The bar plot shows a high level of alpha diversity across all groups.
 ### Diversity Analysis.
 
 ## Installation
