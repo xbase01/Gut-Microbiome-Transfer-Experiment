@@ -30,7 +30,7 @@ In this study, wild mice and laboratory mice were compared to determine if wild 
 ![Conservative_and_variable_regions](img/Conservative_and_variable_regions.jpg)
 
 ## Data Processing Pipeline
-1. **Data Acquisition**: Raw 16S rRNA sequencing data from fecal samples obtained from [data source](https://www.dropbox.com/s/bvr9djue7689mfb/mice_microbiome.zip?dl=1).
+1. **Data Acquisition**: Raw 16S rRNA sequencing data from fecal samples obtained from a research titled: *"Wild Mouse Gut Microbiota Promotes Host Fitness and Improves Disease Resistance"* [data source](https://www.dropbox.com/s/bvr9djue7689mfb/mice_microbiome.zip?dl=1).
 2. **Quality Control**: The raw data was imported into **QIIME2**, where it was trimmed, filtered, and corrected using **DADA2**.
 3. **Taxonomic Classification**: The sequences were classified taxonomically using a naive Bayes classifier.
 4. **Analysis**: Various downstream analyses were performed, including diversity estimation, comparison between groups, and the identification of significant microbial taxa.
