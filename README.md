@@ -44,12 +44,12 @@ In this study, wild mice and laboratory mice were compared to determine if wild 
 ### Taxonomic Classification
 The microbiome from both wild and laboratory mice successfully colonized the guts of germ-free mice, as evidenced by the similarity in microbiome composition between the donors and recipients. The dominant bacterial phylum in both environments is *Firmicutes_A*.
 
-#### Figure 2
+#### Taxonomy Composition of Bacterial Phyla in Laboratory and Wild Mice
 ![Figure 2](img/Figure2.png) 
 
 However, distinguishing a single dominant bacterial genus was challenging. Generally, laboratory mice predominantly harbor members of the *Lachnospiraceae* family, while wild mice are primarily colonized by the genus *Helicobacter_D*.
 
-#### Figure 3
+#### Taxonomy Composition of Bacterial Genera in Laboratory and Wild Mice
 ![Figure 3](img/Figure3.png) 
 
 The bar plot shows a high level of alpha diversity across all groups.
@@ -57,7 +57,7 @@ The bar plot shows a high level of alpha diversity across all groups.
 ### Diversity Analysis.
 The smallest read count across samples was 1495, as shown in screenshot.
 
-#### Figure 4
+#### Screenshot of Reads Statistics
 ![Figure 1](img/Figure1.png) 
 
 Downsampling to this value ensured fair comparisons across samples by normalizing sequencing depth. This normalization allowed for meaningful diversity metrics and statistical comparisons.
@@ -70,29 +70,17 @@ Shapes used in the diversity analysis plots:
 
 In the principal coordinates analysis (PCoA) plot in the figure below, Axis 1 explains 37.97% of the total variation, showing significant differences in microbial communities between groups. L and LR are clustered closely, indicating similar microbial compositions, while W and WR form distinct clusters, reflecting the microbial composition similarities between wild mice and their recipients.
 
-#### Figure 5
+#### Bray Curtis Dissimilarity Plot
 ![Figure 4](img/Figure4.png)
 
 The weighted UniFrac PCoA plot further highlights microbial community differences, with Axis 1 explaining 63.56% of the variation. The separation between laboratory (L, LR) and wild (W, WR) groups along Axis 1 confirms notable differences in their microbiome compositions. Additionally, Axis 2 differentiation between W and WR highlights beta diversity between wild donor mice and their recipients.
 
-#### Figure 6
+#### Weighted UniFrac Dissimilarity Plot
 ![Figure 5](img/Figure5.png)
 
 ---
 
 These findings support the hypothesis that the microbiota from wild mice successfully colonized germ-free mice, with distinct microbial profiles emerging post-transplantation.
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Installation
 
@@ -100,8 +88,8 @@ To run the analysis locally, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/Microbiome-Mice-Analysis.git
-    cd Microbiome-Mice-Analysis
+    git clone https://github.com/xbase01/Gut-Microbiome-Transfer-Experiment
+    cd Gut-Microbiome-Transfer-Experiment
     ```
 
 2. **Install QIIME2**:
@@ -120,7 +108,7 @@ To run the analysis locally, follow these steps:
 
 Once the repository is set up, follow the instructions below to run the analysis:
 
-1. **Prepare raw sequencing data**: Ensure your raw data is in the appropriate format (e.g., FASTQ).
+1. **Prepare raw sequencing data**: Ensure your raw data is in the appropriate format (e.g., .tsv).
 2. **Import the data into QIIME2**:
     ```bash
     qiime tools import --type 'SampleData[Sequences]' --input-path raw_data/ --output-path data.qza
@@ -146,10 +134,17 @@ We welcome contributions from the community. To contribute, please:
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and submit a pull request with a clear description of your modifications.
 
+**Note:** For additional documentation and detailed instructions on using the tools mentioned above, refer to the [QIIME2 Documentation](https://docs.qiime2.org/).
+
+*Further explanations provided in the [detailed report](Jude_metagenomic_report.pdf).
+
+Contact
+-------
+
+If you have questions, please contact Jude Aneke at \[aneke.d@phystech.edu\].
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-**Note:** For additional documentation and detailed instructions on using the tools mentioned above, refer to the [QIIME2 Documentation](https://docs.qiime2.org/).
